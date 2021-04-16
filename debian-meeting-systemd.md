@@ -172,6 +172,11 @@ WantedBy=default.target
 - 手抜きで `tmux` を手動終了したときの処理は省略
   - 終了してしまったときはマシンを再起動している
 
+# 動作確認例
+
+- `sudo -u chatuser XDG_RUNTIME_DIR=/run/user/$(id -u chatuser) systemctl --user status weechat`
+- `sudo -u chatuser XDG_RUNTIME_DIR=/run/user/$(id -u chatuser) journalctl --user -u weechat`
+
 # /etc にあった例
 
 ```
